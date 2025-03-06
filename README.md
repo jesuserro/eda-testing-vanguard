@@ -1,1 +1,1 @@
-# eda-testing-vanguard
+# EDA Testing Vanguard
