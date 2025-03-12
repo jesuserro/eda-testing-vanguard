@@ -165,3 +165,15 @@ Tu trabajo será evaluado según la rúbrica disponible en el **Student Portal**
 Este proyecto es una oportunidad para aplicar habilidades en análisis de datos, pruebas de hipótesis y visualización, al mismo tiempo que trabajas en equipo para resolver un problema del mundo real. 🚀
 
 ¡Buena suerte con el análisis del test A/B de Vanguard!
+
+- Demo
+- KPI 1: CR
+  - Age
+  - Dropoff 
+- KPI 2: CE
+  - Age
+  - Antiguedad
+- KPI 3: TTC
+  - Step
+  - Day
+- KPI 4: Activity/Day  
