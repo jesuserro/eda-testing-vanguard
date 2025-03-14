@@ -36,6 +36,11 @@ def contar_nulos(df):
     st.write("- El porcentaje de valores nulos por columna es:")
     st.write(pd.DataFrame(nulos_por_columna_perc, columns=["% nulos"]))
 
+# Función para mostrar estadística descriptiva
+def mostrar_resumen_datos(df):
+    st.subheader("Resumen Estadístico de los Datos")
+    st.write(df.describe(include='all').T)
+
 if st.session_state.datos_cargados:
     st.success("Has cargado los siguientes datos:")
     explorar_datos(df)
@@ -51,4 +56,8 @@ if button:
     contar_duplicados(df)
     contar_nulos(df)
 
+# Crear btn Mostrar resumen de datos
+button_resumen = st.sidebar.button("Mostrar resumen de datos")
 
+if button_resumen and st.session_state.datos_cargados:
+    mostrar_resumen_datos(df)
