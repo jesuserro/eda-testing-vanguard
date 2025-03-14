@@ -42,3 +42,19 @@ if st.session_state.datos_cargados:
     contar_duplicados(df)
     contar_nulos(df)
 
+# Opciones de limpieza
+button = st.sidebar.button("Limpiar datos")
+remove_na = st.sidebar.checkbox("Eliminar valores nulos")
+remove_duplicates = st.sidebar.checkbox("Eliminar duplicados")
+
+# Si clica button que aparezca texto "Hola"
+if button:
+    if remove_na:
+        df.dropna(inplace=True)
+    if remove_duplicates:
+        df.drop_duplicates(inplace=True)
+    st.write("Datos limpiados")
+    contar_duplicados(df)
+    contar_nulos(df)
+
+
