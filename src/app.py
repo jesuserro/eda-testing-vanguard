@@ -5,8 +5,7 @@ import seaborn as sns
 
 st.title("¡Bienvenidos a Vanguard!")
 
-
-
+st.sidebar.markdown("## Hola caracola2")
 
 df = pd.read_csv("data/processed/navegacion_clientes_experimento_limpio.csv")
 st.write(df.head())
