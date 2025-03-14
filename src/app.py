@@ -41,6 +41,14 @@ def mostrar_resumen_datos(df):
     st.subheader("Resumen Estadístico de los Datos")
     st.write(df.describe(include='all').T)
 
+# Función para mostrar la distribución de edad
+def mostrar_distribucion_edad(df):
+    fig, ax = plt.subplots()
+    sns.histplot(df['clnt_age'].dropna(), kde=True, bins=30, ax=ax)
+    ax.set_title('Distribución de la Edad')
+    ax.set_xlabel('clnt_age')
+    st.pyplot(fig)
+
 if st.session_state.datos_cargados:
     st.success("Has cargado los siguientes datos:")
     explorar_datos(df)
@@ -61,3 +69,9 @@ button_resumen = st.sidebar.button("Mostrar resumen de datos")
 
 if button_resumen and st.session_state.datos_cargados:
     mostrar_resumen_datos(df)
+
+# Crea btn Mostrar distribución de edad
+button_distribucion_edad = st.sidebar.button("Mostrar distribución de edad")
+
+if button_distribucion_edad and st.session_state.datos_cargados:
+    mostrar_distribucion_edad(df)
