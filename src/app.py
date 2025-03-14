@@ -37,6 +37,7 @@ def contar_nulos(df):
     st.write(pd.DataFrame(nulos_por_columna_perc, columns=["% nulos"]))
 
 if st.session_state.datos_cargados:
+    st.success("Has cargado los siguientes datos:")
     explorar_datos(df)
     contar_duplicados(df)
     contar_nulos(df)
