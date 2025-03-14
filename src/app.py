@@ -3,11 +3,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Inicializar st.session_state si no existe
+if 'df' not in st.session_state:
+    st.session_state.df = None  # Inicializa el DataFrame como None
+if 'datos_cargados' not in st.session_state:
+    st.session_state.datos_cargados = False  # Para verificar si los datos están cargados
+
 st.title("¡Bienvenidos a Vanguard!")
 
 st.sidebar.markdown("## Hola caracola2")
 
 df = pd.read_csv("data/processed/navegacion_clientes_experimento_limpio.csv")
+st.session_state.datos_cargados = True  # Marcar que los datos han sido cargados
+
 st.write(df.head())
 
 def explorar_datos(df):
@@ -28,7 +36,8 @@ def contar_nulos(df):
     st.write("- El porcentaje de valores nulos por columna es:")
     st.write(pd.DataFrame(nulos_por_columna_perc, columns=["% nulos"]))
 
-explorar_datos(df)
-contar_duplicados(df)
-contar_nulos(df)
+if st.session_state.datos_cargados:
+    explorar_datos(df)
+    contar_duplicados(df)
+    contar_nulos(df)
 
