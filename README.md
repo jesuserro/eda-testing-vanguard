@@ -7,22 +7,22 @@ In this project, we conducted an A/B testing analysis to evaluate the impact of 
 ### 1. 📊 Completion Rate (CR) per Client
 - **Notebook**: [1_2_CR- completion-rate-client.ipynb](src/kpi/1_2_CR-%20completion-rate-client.ipynb)
 - **Description**: This KPI measures the proportion of clients who completed the process at least once. It helps us understand if the new interface increases the likelihood of clients completing their tasks.
-- **Image**: ![Completion Rate](img/1_2_CR-completion-rate-client.jpg)
+- **Image**: ![Completion Rate](img/cr_drop-off_funnel.jpg)
 
 ### 2. 💰 Cost-Effectiveness (CE) Rate
 - **Notebook**: [2_CE-cost-effectiveness.ipynb](src/kpi/2_CE-cost-effectiveness.ipynb)
 - **Description**: This KPI evaluates the cost-effectiveness of the process by considering the number of calls made by clients. It helps us determine if the new interface reduces the support costs while maintaining or improving completion rates.
-- **Image**: ![Cost-Effectiveness](img/2_CE-cost-effectiveness.jpg)
+- **Image**: ![Cost-Effectiveness](img/cr_age_client.jpg)
 
 ### 3. ⏱️ Time to Complete (TTC)
 - **Notebook**: [3_TTC-time-to-complete.ipynb](src/kpi/3_TTC-time-to-complete.ipynb)
 - **Description**: This KPI measures the time taken by clients to complete the process. It helps us assess if the new interface speeds up the completion time, enhancing user experience.
-- **Image**: ![Time to Complete](img/3_TTC-time-to-complete.jpg)
+- **Image**: ![Time to Complete](img/ttc_by_step.jpg)
 
 ### 4. 📅 Activity per Day
 - **Notebook**: [4_activity-per-day.ipynb](src/kpi/4_activity-per-day.ipynb)
 - **Description**: This KPI analyzes the activity levels of clients on different days of the week. It helps us understand if there are any significant changes in user behavior with the new interface.
-- **Image**: ![Activity per Day](img/4_activity-per-day.jpg)
+- **Image**: ![Activity per Day](img/4_activity_by_day.jpg)
 
 ## 📊 Summary of Findings
 
