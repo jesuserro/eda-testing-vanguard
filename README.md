@@ -1,4 +1,4 @@
-# Vanguard A/B Test Analysis
+# A/B Testing Analysis for User Interface Redesign at Vanguard
 
 ## 📌 Introducción
 Bienvenido al **proyecto del Módulo 2**. En este proyecto, aplicarás todos los conocimientos adquiridos hasta ahora y aprenderás nuevas habilidades en las próximas dos semanas. No es necesario que domines todos los conceptos desde el inicio, sino que los irás incorporando progresivamente.
